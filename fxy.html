@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>fxy</title>
+		<link rel="stylesheet" type="text/css" href="js/swiper-3.4.2.min.css" />
+		<link rel="stylesheet" type="text/css" href="js/animate.min.css"/>
+		<script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+		<script type="text/javascript" src="js/swiper-3.4.2.min.js"></script>
+		<script src="js/swiper.animate1.0.2.min.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet" href="js/style.css">
+		
+		<script src="js/index.js"></script>
+		
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				list-style: none;
+			}
+			body{
+				overflow: hidden;
+			}
+			.swiper-pagination{
+				/*position: fixed;*/
+				/*right: 20px;*/
+				/*top:100px;*/
+			}
+			.homepage1{
+				background: url(images/bg1.jpg) no-repeat;
+				background-position: 0 0;
+				background-size: cover;
+			}
+			.homepage2{
+				background: url(images/base.jpg) no-repeat;
+				background-position: 0 0;
+				background-size: cover;
+			}
+			.homepage3{
+				background: url(images/bg7.jpg) no-repeat;
+				background-position: 0 0;
+				background-size: cover;
+			}
+			.homepage4{
+				background: url(images/pure.jpg) no-repeat;
+				background-position: 0 0;
+				background-size: cover;
+			}
+			.homepage1 img{
+				display: inline-block;
+				vertical-align: top;
+			}
+			.homepage1 h1{
+				position: absolute;
+				z-index: 888;
+				top: 20px;
+				width: 200px;
+			    text-align: center;
+			    left: 50%;
+			    margin-left: -100px;
+				margin: 0 auto;
+			}
+			/*.homepage1 img:nth-child(1){
+				width: 200px;
+				height: 200px;
+				margin-top: 200px;
+				margin-left:100px ;
+			}
+			.homepage1 img:nth-child(2){
+				width: 200px;
+				height: 200px;
+			}
+			.homepage1 img:nth-child(3){
+				width: 200px;
+				height: 200px;
+			}*/
+			.homepage1 img:nth-child(1){
+				position: absolute;
+				top: 15px;
+				left: 15px;
+				width: 80px;
+				height: 80px;
+
+			}
+			.homepage1 img:nth-child(3){
+				position: absolute;
+				top: 15px;
+				right: 15px;
+				width: 80px;
+				height: 80px;
+
+			}
+			.homepage1 img:nth-child(2){
+				position: absolute;
+				bottom: 15px;
+				left: 15px;
+				width: 80px;
+				height: 80px;
+
+			}
+			.homepage1 img:nth-child(4){
+				position: absolute;
+				bottom: 15px;
+				right: 15px;
+				width: 80px;
+				height: 80px;
+
+			}
+			.wenzi span:nth-child(1){
+              font-size: 50px;
+              position: absolute;
+              top: 230px;
+              left: 0;
+              right: 0;
+              bottom: 0;
+              color:#0A9676;
+              text-align: center;
+              text-shadow: 5px -2px 8px #151414;
+              font-weight: bolder;
+			}
+			.wenzi span:nth-child(2){
+              font-size: 50px;
+              position: absolute;
+              top: 230px;
+              left:390px;
+              right: 0;
+              bottom: 0;
+              color:#B6BF31;
+              text-align: center;
+              text-shadow: 5px -2px 8px #151414;
+              font-weight: bolder;
+			}
+				.wenzi span:nth-child(3){
+              font-size: 30px;
+              position: absolute;
+              top: 300px;
+              left:150px;
+              right: 0;
+              bottom: 0;
+              color:white;
+              text-align: center;
+              text-shadow: 5px -2px 8px #151414;
+              font-weight: bolder;
+			}
+			.big{
+				width: 1170px;
+				height: 300px;
+				position: absolute;
+				top: 126px;
+				left: 50px;
+
+			}
+			.big>h1{
+				position: absolute;
+				top:-92px;
+				left: 558px;
+			}
+			.homepage2{
+				text-align: center;
+				/* line-height:250px; */
+			}
+			.homepage2>h1{
+				color: white;
+				text-shadow: 5px -2px 8px #151414;
+			}
+			.homepage2>.big>img{
+				margin-left: 126px;
+			}
+			.wz1{
+				position: absolute;
+				top: 300px;
+				left: 123px;
+			}
+			.wz2{
+				position: absolute;
+				top: 300px;
+				left: 543px;
+			}
+			.wz3{
+				position: absolute;
+			    top: 300px;
+				left: 835px;
+			}
+			.wz4{
+				position: absolute;
+				top: 300px;
+				left:1058px;
+			}
+			.homepage2>.wz1,.wz2,.wz3,.wz4{
+				font-size: 20px;
+				color: white;
+			}
+			.homepage3{
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+			}
+			.homepage3>ul{
+             overflow: hidden;
+			}
+			.homepage3>ul>li{
+				width: 300px;
+				height: 400px;
+				float: left;
+				background: red;
+				margin-left: 31px;
+				margin-top: 100px;
+			}
+			.homepage3>ul>li>a>img{
+				width: 300px;
+				height: 400px;
+				transition: all 1s ease;
+			}
+			.homepage3>ul>li>a>img:hover{
+               width: 110%;
+               height: 110%;
+               border: 2px solid red;
+			}
+			
+
+
+		</style>
+	</head>
+
+	<body>
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+
+		<!-- 	1ping -->
+				<div class="swiper-slide homepage1">
+					<!--<img src="images/girl.jpg" class="ani"  alt="" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"/>-->
+					<img src="images/1.png" alt=""   class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+					<img src="images/2.png" alt=""  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+					<img src="images/3.png" alt=""  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+					<img src="images/4.png" alt=""  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+					<p class="ani"  alt="" swiper-animate-effect="rotateIn" swiper-animate-duration="2.1s" swiper-animate-delay="0.5s"></p>
+				
+
+				<div class="wenzi">
+					<span  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"> 前端工程师</span>
+					<span  class="ani" swiper-animate-effect="fadeInUp" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">简历</span>
+					<span class="ani" swiper-animate-effect="rollIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">爱技术，爱生活</span>
+				</div>
+			</div>
+
+         <!-- 2ping -->
+				<div class="swiper-slide homepage2">
+				
+				<div class="big">
+				<h1>基本资料</h1>
+				<img src="images/glass.png" alt=""  class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+				<img src="images/hat.png" alt=""  class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+				<img src="images/book.png" alt=""  class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+				<img src="images/tel.png" alt=""  class="ani" swiper-animate-effect="rotateIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                </div>
+                <div class="wz1 ani"swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                	<h4>基本信息</h4>
+                    <p>
+                        姓名: 范新元 男
+                        <br>
+                        年龄: 24岁 籍贯：山西
+                    </p>
+                </div>
+                 <div class="wz2 ani"swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                	 <h4>毕业院校</h4>
+                    <p>
+                       运城学院
+                    </p>
+                </div>
+                 <div class="wz3 ani"swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                	<h4>学历和专业</h4>
+                    <p>
+                       会计 专科
+                        <br>
+                        专业技能 编程
+                    </p>
+                </div>
+                 <div class="wz4 ani"swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s">
+                	 <h4>联系方式</h4>
+                    <p>
+                        邮箱 79394637@qq.com
+                        <br>
+                        电话13643445281
+                    </p>
+                </div>
+					
+				</div>
+				<div class="swiper-slide homepage3">
+				<ul>
+				   <li class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><a href="范新元天猫/index.html"><img src="images/tm.png" alt=""></a></li>
+				   <li class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><a href="范新元小米/mi.html"><img src="images/xm.png" alt=""></a></li>
+				   <li class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><a href="范新元打字游戏/index.html"><img src="images/dzgame.png" alt=""></a></li>
+				   <li class="ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.3s"><a href="范新元画板/huaban.html"><img src="images/hb.png" alt=""></a></li>
+
+
+				</ul>	
+                   
+
+				</div>
+				<div class="swiper-slide homepage4 ">
+		
+        <h1>jQuery & CSS3 Skills Bar</h1>
+
+
+
+<div class="skillbar clearfix " data-percent="20%">
+
+	<div class="skillbar-title" style="background: #d35400;"><span>HTML5</span></div>
+
+	<div class="skillbar-bar" style="background: #e67e22;"></div>
+
+	<div class="skill-bar-percent">20%</div>
+
+</div> <!-- End Skill Bar -->
+
+
+
+<div class="skillbar clearfix " data-percent="25%">
+
+	<div class="skillbar-title" style="background: #2980b9;"><span>CSS3</span></div>
+
+	<div class="skillbar-bar" style="background: #3498db;"></div>
+
+	<div class="skill-bar-percent">25%</div>
+
+</div> <!-- End Skill Bar -->
+
+
+
+<div class="skillbar clearfix " data-percent="50%">
+
+	<div class="skillbar-title" style="background: #2c3e50;"><span>jQuery</span></div>
+
+	<div class="skillbar-bar" style="background: #2c3e50;"></div>
+
+	<div class="skill-bar-percent">50%</div>
+
+</div> <!-- End Skill Bar -->
+
+
+
+<div class="skillbar clearfix " data-percent="40%">
+
+	<div class="skillbar-title" style="background: #46465e;"><span>PHP</span></div>
+
+	<div class="skillbar-bar" style="background: #5a68a5;"></div>
+
+	<div class="skill-bar-percent">40%</div>
+
+</div> <!-- End Skill Bar -->
+
+
+
+<div class="skillbar clearfix " data-percent="75%">
+
+	<div class="skillbar-title" style="background: #333333;"><span>Wordpress</span></div>
+
+	<div class="skillbar-bar" style="background: #525252;"></div>
+
+	<div class="skill-bar-percent">75%</div>
+
+</div> <!-- End Skill Bar -->
+
+
+
+ <!-- End Skill Bar -->
+
+
+
+<div class="skillbar clearfix " data-percent="70%">
+
+	<div class="skillbar-title" style="background: #124e8c;"><span>Photoshop</span></div>
+
+	<div class="skillbar-bar" style="background: #4288d0;"></div>
+
+	<div class="skill-bar-percent">70%</div>
+
+</div> <!-- End Skill Bar -->
+
+
+
+<div style="text-align:center;clear:both;">
+
+</div>
+
+
+
+				</div>
+				
+			</div>
+			<!-- 如果需要分页器 -->
+			<div class="swiper-pagination"></div>
+		</div>
+		<script>
+				
+
+			var mySwiper = new Swiper('.swiper-container', {
+				direction: 'vertical',
+				loop: true,
+				// 如果需要分页器
+				pagination: '.swiper-pagination',
+				paginationClickable :true,
+				paginationHide :true,
+				height : window.innerHeight,
+				width : window.innerWidth,
+				onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+				    swiperAnimateCache(swiper); //隐藏动画元素 
+				    swiperAnimate(swiper); //初始化完成开始动画
+				}, 
+				onSlideChangeEnd: function(swiper){ 
+				    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				} 
+			})
+		</script>
+	</body>
+
+</html>
+
